@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Page</title>
-    
+    <style>
+.container {
+  position: relative;
+  width: 100%;
+}
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:brown;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+    </style>
 </head>
 <body>
-    <p align="center"><a href="./secondpage.html" target="_self"><img width=80% src="https://media.giphy.com/media/lffXguRwxQov3iLq73/giphy.gif " ></a></p>
+    <div class="container">
+    <p align="center"><img width=80% src="https://media.giphy.com/media/lffXguRwxQov3iLq73/giphy.gif " ></a></p>
+    <a class="btn" href="./secondpage.html" >Click to open the door to the Cafè</a>
+    </div>
 </body>
 </html>
 
