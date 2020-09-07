@@ -60,3 +60,15 @@ span:nth-child(3)
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
