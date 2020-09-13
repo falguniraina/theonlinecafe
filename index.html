@@ -22,6 +22,37 @@
       body{
         background: url("images/home.jpg") no-repeat fixed center center / cover transparent;
       }
+      .leftbox { 
+        float:left;  
+        width:25%;
+        height: 100%;
+        padding:5px 5px;
+        margin:10px 8px;
+        margin-left: 140px;
+        background: rgba(214,219,223,.8);
+        border-radius: 5px;
+        text-align:center;
+      } 
+      .middlebox{ 
+        float:left; 
+        width:25%; 
+        height:100%;  
+        padding:5px 5px;
+        margin:10px 8px;
+        text-align:center;
+        background: rgba(214,219,223,.8);
+        border-radius: 5px;
+       } 
+      .rightbox{ 
+        float:left;  
+        width:25%; 
+        height:100%; 
+        padding:5px 5px;
+        margin:10px 8px;
+        background: rgba(214,219,223,.8);
+        border-radius: 5px;
+        text-align:center;
+      }
     </style>
 
   </head>
@@ -91,15 +122,9 @@
 
 
 
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Pandemic Education Sale!</strong> Prices as low as ₹200 |Get new skills risk-free.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-  
     <div class="container mt-3">
-      <div class="jumbotron">
+      <div class="jumbotron" style="background: rgba(214,219,223,.8);
+        border-radius: 5px;">
         <h1 class="display-4">Welcome to The Cafè Online</h1>
         <p class="lead">
           This is a simple hero unit, a simple jumbotron-style component for
@@ -110,31 +135,27 @@
           It uses utility classes for typography and spacing to space content
           out within the larger container.
         </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">View on Google Map</a>
       </div>
     </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center" style="color: white;">
-                    <img src="images/intropage.jpg" bd-placeholder-img rounded-circle" width="140" height="140" />
+        
+                <div class="leftbox">
+                    <img src="images/intropage.jpg" class="bd-placeholder-img rounded-circle "width="140" height="140" />
                   <h2>Interact with best teachers</h2>
-                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                  <p>It provides you the platform where you can post your requirements or you could help someone with their problems. Click the button belo to know moire about it!</p>
+                  <p><a class="btn btn-secondary" href="./teac_stu_portal.html" role="button">View details »</a></p>
                 </div>
-                <div class="col-md-4 text-center" style="color: white;">
+                <div class="middlebox">
                     <img src="images/onlineeducation.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
-                  <h2>Hone your skills</h2>
-                  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                  <h2>Know about your Region</h2>
+                  <p>It provides you the platform where you can post your requirements or you could help someone with their problems. Click the button belo to know moire about it!</p>
+                  <p><a class="btn btn-secondary" href="./comingsoon.html" role="button">View details »</a></p>
                 </div>
-                <div class="col-md-4 text-center"style="color: white;">
+                <div class="rightbox">
                     <img src="images/student.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
                   <h2>Fun as well as learning</h2>
-                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                  <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                  <p>It provides you the platform where you can post your requirements or you could help someone with their problems. Click the button belo to know moire about it!</p>
+                  <p><a class="btn btn-secondary" href="./funandlearning.html" role="button">View details »</a></p>
                 </div>
-        </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
