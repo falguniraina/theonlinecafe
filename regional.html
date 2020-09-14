@@ -20,11 +20,81 @@
     <style type="text/css">
       body{
         background: url("images/region.jpg") no-repeat fixed center center / cover transparent;
-        color: white;
+        font-family: Arial, Helvetica, sans-serif;
       }
       h1{
-        text-align: center;
         font-size: 300%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      /* Float four columns side by side */
+      .column{
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      /* Remove extra left and right margins, due to padding */
+      .row1{
+        margin: 0 -5px;
+      }
+      /* Clear floats after the columns */
+      .row1:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .row2{
+        margin: 0px -5px;
+      }
+      /* Clear floats after the columns */
+      .row2:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /* Responsive columns */
+      @media screen and (max-width: 600px){
+        .column,.flip-card,.flip-card-inner,.flip-card-back,.flip-card-front{
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      .flip-card{
+        background-color: transparent;
+        width: 200px;
+        height: 250px;
+        perspective: 1000px;
+        margin: 25px 50px;
+      }
+      .flip-card-inner{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+      .flip-card:hover .flip-card-inner{
+        transform: rotateY(180deg);
+      }
+      .flip-card-front, .flip-card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .flip-card-front{
+        background-color: #bbb;
+        color: black;
+      }
+      .flip-card-back{
+        background: linear-gradient(to right, #4192aa, #000000);
+        color: white;
+        transform: rotateY(180deg);
       }
     </style>
   </head>
@@ -93,8 +163,161 @@
     </nav>
 
     <h1>
-      Coming soon..
+      <b><i>Regions</i></b>
     </h1>
+
+    <div class="row1">
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/agra.jpeg" alt="Agra" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Agra</h5>
+                <br>
+                <p>State: Uttar Pradesh</p>
+                <p>Known As:-<br>The Taj City</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/amritsar.jpeg" alt="Amritsar" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Amritsar</h5>
+                <br>
+                <p>State: Punjab</p>
+                <p>Known As:-<br>City of Golden temple</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/jaipur.jpeg" alt="Mumbai" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Jaipur</h5>
+                <br>
+                <p>State: Rajasthan</p>
+                <p>Known As:-<br>Paris of India</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/jammu.jpeg" alt="Mumbai" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Jammu</h5>
+                <br>
+                <p>UT: Jammu & Kashmir</p>
+                <p>Known As:-<br>City of Temples</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/jodhpur.jpeg" alt="Mumbai" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Jodhpur</h5>
+                <br>
+                <p>State: Rajasthan</p>
+                <p>Known As:-<br>The Blue City</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/kota.jpeg" alt="Mumbai" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Kota</h5>
+                <br>
+                <p>State: Rajasthan</p>
+                <p>Known As:-<br>Coaching Hub of the Country</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/mumbai.jpeg" alt="Mumbai" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Mumbai</h5>
+                <br>
+                <p>State: Maharashtra</p>
+                <p>Known As:-<br>City of Dreams</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/patna.jpeg" alt="Mumbai" style="width:200px;height:250px;">
+            </div>
+            <a href="./comingsoon.html">
+              <div class="flip-card-back">
+                <br>
+                <h5>Patna</h5>
+                <br>
+                <p>State: Bihar</p>
+                <p>Known As:-<br>The City of Leaders & Knowledge</p> 
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <p style="font-size: 180%; text-align: center;"><b>More to come...</b></p>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
