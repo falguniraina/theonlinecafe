@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Third Page</title>
+    <title>The Cafè Online</title>
 
     <style>
         * {
@@ -13,7 +13,7 @@
 }
 
 body {
-  background: #fefefe;
+  background: url("images/second.jpg") no-repeat fixed center center / cover transparent;
   font-family: sans-serif;
 }
 
@@ -38,6 +38,7 @@ body {
   width: 20%;
   background: #fff;
   border: 1px solid #ccc;
+  border-radius: 5px;
   margin-bottom: 50px;
   transition: 0.3s;
 }
@@ -45,7 +46,8 @@ body {
 .card-header {
   text-align: center;
   padding: 50px 10px;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #502600, #b38662);
+  border-radius: 5px 5px 0px 0px;
   color: #fff;
 }
 
@@ -59,7 +61,7 @@ body {
   display: block;
   color: #fff;
   text-align: center;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to right, #502600, #b38662);
   margin-top: 30px;
   text-decoration: none;
   padding: 10px 5px;
@@ -91,11 +93,11 @@ body {
   }
 }
 .button {
-    position:absolute;
-    bottom:5%;
-    right:20%;
-    margin-top:100%;
-    background-color: #4CAF50;
+    position:fixed;
+    bottom:2px;
+    right:2px;
+    background: linear-gradient(to right, #502600, #b38662);
+    border-radius: 5px;
     border: none;
     color:ghostwhite;
     padding: 15px 32px;
@@ -103,14 +105,18 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
   }
+.button:hover{
+      background: linear-gradient(to left, #502600, #b38662);
+}
+
     </style>
 </head>
+
 <body>
     <div class="container mt-3">
-        <div class="heading"><h1>What's On Your Mind</h1>
+        <div class="heading"><h1 style="color: #b38662;">What's On Your Mind</h1>
         </div>
         <div class="row">
             <div class="card">
@@ -161,7 +167,7 @@ body {
         </div>
 
     <footer>  
-      <a href="./index.html" class="button">Skip>></button></a>
+      <a href="./index.html" class="button">Skip to Home Page>></button></a>
     </footer>
 
 </body>
