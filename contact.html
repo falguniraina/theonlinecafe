@@ -17,11 +17,20 @@
     />
 
     <title>Contact The Cafè Online</title>
+
+    <style>
+      body{
+        background: url("images/contact.jpg") no-repeat fixed center center / cover transparent;
+        color: white;
+      }
+    </style>
+
   </head>
+
   <body>
     <!-- our code starts here -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="50" width="71"></a>
+      <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="71">The Cafè Online</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -121,13 +130,17 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity">
+                  <input type="text" class="form-control" id="inputCity" placeholder="City">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                  <select id="inputState" class="form-control" placeholder="State">
+                    <option selected="Select">Select</option>
+                    <option>Jammu & Kashmir</option>
+                    <option>Delhi</option>
+                    <option>Rajasthan</option>
+                    <option>Uttar Pradesh</option>
+                    <option>Tamil Nadu</option>
                   </select>
                 </div>
                 <div class="form-group col-md-2">
@@ -143,7 +156,7 @@
                   </label>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
 </div>
 
