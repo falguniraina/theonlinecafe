@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login System</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>Login</title>
     <style>
         * {
     box-sizing: border-box;
@@ -12,9 +25,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI';
-    font-size: 25px;
+    background: url("images/login.jpg") no-repeat fixed center center / cover transparent;
 }
-
 
 .form input {
     min-width: 400px;
@@ -65,13 +77,15 @@ body {
 
 .left-section .form {
     float: left;
-    margin: 35vh auto;
+    margin: 25vh auto;
+    color: white;
 }
 
 .right-section .form {
     float: right;
     right: 0;
-    margin: 30vh auto;
+    margin: 25vh auto;
+    color: white;
 }
 
 .cover .switch-btn {
@@ -104,6 +118,7 @@ body {
 .left-section .cover img {
     height: 100vh;
     width: 50vw;
+    opacity: .7;
 }
 
 .left-section .cover h1 {
@@ -140,6 +155,7 @@ body {
 .right-section .cover img {
     height: 100vh;
     width: 50vw;
+    opacity: .7;
 }
 
 .right-section .cover h1 {
@@ -184,17 +200,79 @@ body {
     </style>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="71">The Cafè Online</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./login.html">Login</a>
+              <a class="dropdown-item" href="./teac_stu_portal.html">Student-Teacher Portal</a>
+              <a class="dropdown-item" href="./funandlearning.html">Fun And Learning</a>
+              <a class="dropdown-item" href="./discussion.html">Discussion Forum</a>
+              <a class="dropdown-item" href="./regional.html">Regional Data</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
     
     <section class="left-section">
         <div id="left-cover" class="cover cover-hide">
-            <img src="images/cover.png" alt="">
+            <img src="images/cover.jpg" alt="">
             <h1>Welcome !</h1>
             <h3>Already have an account ?</h3>
             <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
         </div>
         <div id="left-form" class="form fade-in-element">
             <h1>Login</h1>
-            <form action="login.php" method="post">
+            <form action="./index.html" method="post">
                 <input type="text" name="user-name" class="input-box" placeholder="User Name">
                 <input type="password" name="user-pass" class="input-box" placeholder="Password">
                 <input type="submit" name="login-btn" class="btn" value="Login">
@@ -204,14 +282,14 @@ body {
 
     <section class="right-section">
         <div id="right-cover" class="cover fade-in-element">
-            <img src="images/cover.png" alt="">
+            <img src="images/cover.jpg" alt="">
             <h1>Welcome !</h1>
             <h3>Don't have an account ?</h3>
             <button type="button" class="switch-btn" onclick="switchSignup()">Signup</button>
         </div>
         <div id="right-form" class="form form-hide">
             <h1>Signup</h1>
-            <form action="signup.php" method="post">
+            <form action="./index.html" method="post">
                 <input type="text" name="user-name" class="input-box" placeholder="User Name">
                 <input type="email" name="user-email" class="input-box" placeholder="Email">
                 <input type="password" name="user-pass" class="input-box" placeholder="Password">
