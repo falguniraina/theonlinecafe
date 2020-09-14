@@ -1,5 +1,5 @@
-<h2 align="center"><b>The Cafe Online</b></h2>
-<p align="center">The Cafe Online is a platform for exploring,enhancing and learning new skills in virus shutdown </p>
+<h2 align="center"><b>The Cafè Online</b></h2>
+<p align="center">The Cafè Online is a platform for exploring,enhancing and learning new skills in virus shutdown </p>
 <h5>The website has multiple option:</h5>
 
 **1.** <b>Home Page</b> – Explaining the purpose of website and posting updates<br>
